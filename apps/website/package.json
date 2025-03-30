@@ -1,0 +1,16 @@
+{
+  "name": "@ahtu-cli/website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "ahtu-cli": "ahtu"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@ahtu-cli/cli": "workspace:*"
+  }
+}

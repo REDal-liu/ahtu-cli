@@ -1,0 +1,17 @@
+#!/usr/bin/env node
+
+import { runCLI } from "../dist/index.js";
+// const { runCLI } = require("../dist/index.js");
+
+runCLI();
+
+
+
+
+
+console.log('=====file desc start========');
+console.log("此脚本为Node.js二进制文件需要为其设置合适的权限以保证可执行");
+console.log("二进制文件的权限应设置为可读、可写、可执行");
+console.log("使用 ll 命令查看当前文件的权限信息");
+console.log("使用 chmod +x 命令为指定文件赋予可读、可写、可执行权限，示例：chmod +x file name");
+console.log('=====file desc end========');

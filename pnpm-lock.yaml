@@ -1,0 +1,19 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .: {}
+
+  apps/website:
+    devDependencies:
+      '@ahtu-cli/cli':
+        specifier: workspace:*
+        version: link:../../packages/cli
+
+  packages/cli: {}
+
+  packages/core: {}

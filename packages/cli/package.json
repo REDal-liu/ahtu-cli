@@ -1,0 +1,20 @@
+{
+  "name": "@ahtu-cli/cli",
+  "version": "1.0.0",
+  "description": "",
+  "main_desc": "main 是 commmonjs 模块的入口, 应该用编译之后的产物",
+  "main": "./build/index.js",
+  "mondule_desc": "module 是 esm 模块的入口, 应该用编译之后的产物",
+  "module": "./dist/index.js",
+  "type": "module",
+  "bin_desc": "bin 二进制文件入口",
+  "bin": {
+    "ahtu": "./bin/ahtu"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
