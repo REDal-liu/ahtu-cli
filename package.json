@@ -8,8 +8,11 @@
     "lint:ts": "eslint --fix",
     "spellcheck": "cspell lint --dot --gitignore --color --cache --show-suggestions \"(packages|apps)/**/*.@(html|js|cjs|mjs|ts|tsx|css|scss|md)\"",
     "prepare": "husky",
-    "commit": "git add . && git-cz"
+    "commit": "git add . && git-cz",
+    "build": "turbo run build",
+    "dev": "turbo  run dev"
   },
+  "packageManager": "pnpm@10.7.0",
   "config": {
     "commitizen": {
       "path": "node_modules/cz-git"
@@ -30,6 +33,7 @@
     "commitizen": "4.3.1",
     "cz-git": "1.11.1",
     "husky": "9.1.7",
-    "commitlint": "19.8.0"
+    "commitlint": "19.8.0",
+    "turbo": "2.5.0"
   }
 }

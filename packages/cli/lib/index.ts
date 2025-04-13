@@ -2,9 +2,7 @@
 
 import { program } from 'commander';
 
-import { deploy } from './commands/deploy';
-import { init } from './commands/init';
-import { registerCommand } from './registerCommand';
+import './commands/index';
 
 
 
@@ -15,11 +13,13 @@ export function runCLI() {
         .option('-s, --separator <char>')
         .argument('<string>');
 
-    // 注册命令
-    registerCommand(init);
-    registerCommand(deploy);
+    // 先创建 再追加
+    // const createCommand = program.createCommand('init')
+    //     .description('初始化项目')
+    //     .action(() => {
+    //         console.log('init command');
+    //     });
+    // program.addCommand(createCommand);
 
-    //  commander 内置的插件化处理
-    program.parse(process.argv);
-
-} 
+    program.parse();
+}
