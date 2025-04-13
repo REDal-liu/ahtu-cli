@@ -1,7 +1,9 @@
-import { configureStore, combineReducers } from '@reduxjs/toolkit';
-import themeReducer, { ThemeState } from './theme/themeSlice';
-import { persistReducer, persistStore, PersistConfig } from 'redux-persist';
+import { PersistConfig,persistReducer, persistStore } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
+
+import { combineReducers,configureStore } from '@reduxjs/toolkit';
+
+import themeReducer, { ThemeState } from './theme/themeSlice';
 
 // Define the state shape
 interface RootState {
